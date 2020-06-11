@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake game by Flavius Rabuga</title>
+        
+        <link rel="stylesheet" href="./style/menu.css">
+        <link rel="stylesheet" href="./style/game.css">
+        <link rel="stylesheet" href="./style/stats.css">
+
+        <script type="text/javascript" src="./page_scripts/controllers.js"></script>
+        <script type="text/javascript" src="./page_scripts/submitScore.js"></script>
+        <script type="text/javascript" src="./page_scripts/showstats.js"></script>
+        <script type="text/javascript" src="./game_scripts/props.js"></script>
+        <script type="text/javascript" src="./game_scripts/movement.js"></script>
+        <script type="text/javascript" src="./game_scripts/options.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+
+        <button id="up" class="mb" onclick="up()">sus</button>
+        <button id="down" class="mb" onclick="down()">jos</button>
+        <button id="left" class="mb" onclick="left()">stanga</button>
+        <button id="right" class="mb" onclick="right()">dreapta</button>
+
+        <div id="mainMenu">
+            <p id="text">TEXT</p>
+            <button class="sButtons" id="startButton" onclick="startGame()">Start</button>
+            <button class="sButtons" id="statsButton" onclick="showStats()">Show stats</button>
+            <button class="sButtons" id="">dunno</button>
+            <div class="centered">
+                <input type="text" id="username" name="username" 
+                placeholder="Enter your username here!">
+                <div id="score" class="sButtons">Your score: 0</div>
+                <button class="sButtons" onclick="submitScore()">Submit</button>
+            </div>
+        </div>
+
+        <div id="stats">
+            <table id="customers">
+                <tr>
+                  <th>Place</th>
+                  <th>Username</th>
+                  <th>Score</th>
+                </tr>
+              </table>
+              
+        </div>
+
+    </body>
+</html>

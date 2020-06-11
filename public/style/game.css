@@ -1,0 +1,45 @@
+
+
+body{
+    background-color: red;
+}
+
+#root{
+    position: absolute;
+    top:10vh;
+    left:10vw;
+    width:80vw;
+    height:80vh;
+    background-color: white;
+}
+
+.tail{
+    background-color: green;
+    position: absolute;
+}
+
+#up,#down,#left,#right{
+    display: none;
+    position: absolute;
+} 
+
+.mb{
+    width: 10vh;
+    height: 10vh;
+}
+#up{
+    top:90vh;
+    left:5vh;
+}
+#down{
+    top:90vh;
+    left:16vh;
+}
+#left{
+    top:90vh;
+    right:16vh;
+}
+#right{
+    top:90vh;
+    right:5vh;
+}
